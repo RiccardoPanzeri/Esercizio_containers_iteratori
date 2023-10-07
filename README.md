@@ -1,1 +1,1 @@
-# Esercizio_containers_iteratori
+Esercizio scolastico sull'uso delle classi container e degli iteratori
