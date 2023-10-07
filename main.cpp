@@ -16,23 +16,23 @@ int main()
     vector<int> vector1(5);
     deque<char> deque1(5); //istanzio un oggetto di classe deque (double ended queue): gli elementi della deque non sono contigui, consentendo di effettuare più facilmente gli inserimenti non in coda. allo stesso tempo, questa classe container rende possibile l'accesso diretto agli elementi; 
 
-   //carico l'oggetto di classe vector e ne visualizzo il contenuto; nelle funzioni che ho scritto utilizzo gli iteratori: 
+    //carico l'oggetto di classe vector e ne visualizzo il contenuto; nelle funzioni che ho scritto utilizzo gli iteratori: 
     int indiceV = rand() % vector1.size();
     caricaVettoreInt(vector1);
-    cout << endl<<"Contenuto dell'oggetto di classe vector: " << endl;
+    cout << endl << "Contenuto dell'oggetto di classe vector: " << endl;
     visualizzaVettoreInt(vector1);
-    cout << endl << "Accedo direttamente all'elemento in posizione " <<indiceV << " dell'oggetto di classe vector: " << vector1[indiceV]<<endl;
+    cout << endl << "Accedo direttamente all'elemento in posizione " << indiceV << " dell'oggetto di classe vector: " << vector1[indiceV] << endl;
 
     //carico e visualizzo il contenuto dell'array non dinamico utilizzando gli iteratori:
     int indiceA = rand() % array1.size();
     CaricaArrayInt(array1);
     cout << endl << "Visualizzo contenuto array non dinamico: " << endl;
     visualizzaArrayInt(array1);
-    cout << endl << "Accedo direttamente all'elemento in posizione " << indiceA << " dell'oggetto di classe vector: " << array1[indiceA] <<endl<< endl;
-   
+    cout << endl << "Accedo direttamente all'elemento in posizione " << indiceA << " dell'array: " << array1[indiceA] << endl << endl;
+
     //carico e visualizzo contenuto della lista utilizzando gli iteratori: non mi è possibile accedere direttamente ad un valore per via del posizionamento non contiguo degli valori in ram;
     CaricaListaInt(lista1);
-    cout <<endl<< "Visualizzo il contenuto della lista: " << endl;
+    cout << endl << "Visualizzo il contenuto della lista: " << endl;
     visualizzaListaInt(lista1);
 
     //carico e visualizzo conenuto deque:
@@ -41,15 +41,14 @@ int main()
     cout << endl << "Visualizzo il contenuto della deque: " << endl;
     visualizzaDequeChar(deque1);
     // nonostante la Deque non prevede un'organizzazione degli elementi secondo una logica contigua, permette di accedere direttamente ad un elemento:
-    cout << endl << "Accedo direttamente all'elemento in posizione " << indiceQ << " della deque: " << deque1[indiceQ] << endl << endl; 
+    cout << endl << "Accedo direttamente all'elemento in posizione " << indiceQ << " della deque: " << deque1[indiceQ] << endl << endl;
 
 
 
 
 
 
-    
+
     return 0;
 
 }
-
